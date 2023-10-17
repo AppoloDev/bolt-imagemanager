@@ -3,19 +3,11 @@
 namespace Appolodev\ImageManager\Service;
 
 use Appolodev\ImageManager\Service\Exception\CreateFileException;
-use Appolodev\ImageManager\Service\Exception\CreateFolderException;
 use Appolodev\ImageManager\Service\Exception\DeleteFileException;
-use Appolodev\ImageManager\Service\Exception\DeleteFolderException;
 use Bolt\Configuration\FileLocations;
-use Symfony\Component\Filesystem\Exception\IOException;
-use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
-use Symfony\Component\Validator\Constraints\File;
-use Symfony\Component\Validator\Constraints\Image;
-use Symfony\Component\Validator\ConstraintViolationListInterface;
 use Symfony\Contracts\Translation\TranslatorInterface;
-use Webmozart\PathUtil\Path;
 
 class FileManager
 {

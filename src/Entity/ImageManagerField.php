@@ -7,10 +7,7 @@ namespace Appolodev\ImageManager\Entity;
 use Bolt\Entity\Field;
 use Bolt\Entity\Field\Excerptable;
 use Bolt\Entity\FieldInterface;
-use Bolt\Utils\ThumbnailHelper;
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Asset\PathPackage;
-use Symfony\Component\Asset\VersionStrategy\EmptyVersionStrategy;
 use Twig\Markup;
 
 /**
