@@ -1,0 +1,25 @@
+{
+    "name": "appolodev/imagemanager",
+    "description": "Add image manager insteadof select.",
+    "type": "bolt-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Appolodev",
+            "email": "contact@appolo.fr"
+        }
+    ],
+    "require-dev": {
+        "bolt/core": "^5.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Appolodev\\ImageManager\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "entrypoint": "Appolodev\\ImageManager\\Extension"
+    }
+}

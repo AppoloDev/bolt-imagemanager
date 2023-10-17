@@ -1,0 +1,5 @@
+imagemanager:
+    resource: '../../vendor/appolodev/imagemanager/src/Controller/ImageManager/'
+    prefix: '%bolt.backend_url%'
+    type: annotation
+

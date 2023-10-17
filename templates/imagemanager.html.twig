@@ -1,0 +1,45 @@
+{% extends '@bolt/_partials/fields/_base.html.twig' %}
+
+{% set extensions = field.definition.get('extensions')|default('') %}
+{% set info %}
+    {{ 'upload.allow_file_types'|trans }}: <code>{{ extensions|join('</code>, <code>') }}</code><br>
+    {{ 'upload.max_size'|trans }}: {{ config.maxupload|format_bytes }}
+{% endset %}
+
+{% block field %}
+    {% if setPath is not defined %}
+        {% set setPath = field.definition.get('upload')|placeholders({'contenttype': record.contenttype}) %}
+    {% endif %}
+
+    <image-manager>
+        <div class="row">
+            <div class="col-12 col-md-3 order-md-2">
+                <div class="image--preview"></div>
+            </div>
+            <div class="col order-md-1">
+                <div class="input-group mb-3">
+                    <input title="{{ id }} filename" name="{{ name }}[filename]" type="text" placeholder="Filename (upload a new file, or select an existing one)" data-readonly="readonly" class="form-control"
+                    value="{{ field.get('filename') }}"/>
+                </div>
+
+                <div class="input-group mb-3">
+                    <input title="{{ id }} alt" name="{{ name }}[alt]" type="text" placeholder="Alt attribute" class="form-control" value="{{ field.get('alt') }}" />
+                </div>
+                <div role="toolbar" class="btn-toolbar">
+                    <div role="group" class="btn-group mr-2">
+                        <button type="button" class="btn btn-sm btn-tertiary" id="image-manager">
+                            <i class="fas fa-fw fa-upload"></i> {{ 'imagemanager.button_open_image_manager'|trans }}
+                        </button>
+                    </div>
+                    <div role="group" class="btn-group mr-2">
+                        <button type="button" class="btn btn-sm btn-hidden-danger" id="remove">
+                            <i class="fas fa-fw fa-trash"></i> {{ 'imagemanager.button_remove'|trans }}
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <file-manager endpoint="{{ path('image_manager_endpoint', {baseFolder: setPath}) }}" hidden=""></file-manager>
+    </image-manager>
+{% endblock %}
