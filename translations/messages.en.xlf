@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="en">
   <file id="messages.en">
-    <unit id="9att2Nh" name="imagemanager.button_open_image_manager">
+    <unit id="9att2Nh" name="Open image manager">
       <segment>
-        <source>imagemanager.button_open_image_manager</source>
+        <source>Open image manager</source>
         <target>Open image manager</target>
       </segment>
     </unit>
-    <unit id="DaXtp6U" name="imagemanager.button_remove">
+    <unit id="DaXtp6U" name="Remove">
       <segment>
-        <source>imagemanager.button_remove</source>
+        <source>Remove</source>
         <target>Remove</target>
       </segment>
     </unit>
