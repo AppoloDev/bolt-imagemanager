@@ -1,5 +1,5 @@
 {
-    "name": "appolodev/imagemanager",
+    "name": "appolodev/bolt-imagemanager",
     "description": "Add image manager insteadof select.",
     "type": "bolt-extension",
     "license": "MIT",

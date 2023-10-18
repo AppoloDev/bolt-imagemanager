@@ -23,14 +23,13 @@ class ImageManager extends HTMLElement {
       });
 
       this.filemanager.addEventListener("selectfile", e => {
-        console.log(e.detail);
         this.changeValue(e.detail.url);
         this.changePreview(e.detail.thumbnail)
         this.filemanager.setAttribute('hidden', true);
       });
 
       this.changeValue(this.fileInput.value);
-      this.changePreview(this.fileInput.value ? '/files'.this.fileInput.value : null);
+      this.changePreview(this.fileInput.value ? `/files/${this.fileInput.value}` : null);
     }
   }
 
