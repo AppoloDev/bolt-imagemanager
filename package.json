@@ -8,5 +8,8 @@
   },
   "devDependencies": {
     "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "filemanager-element": "^0.1.2"
   }
 }
