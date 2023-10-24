@@ -40,6 +40,6 @@
             </div>
         </div>
 
-        <file-manager endpoint="{{ path('image_manager_endpoint', {baseFolder: setPath}) }}" hidden=""></file-manager>
+        <file-manager endpoint="{{ path('image_manager_endpoint', {baseFolder: setPath}) }}" hidden="" lang="{{ app.user.locale }}"></file-manager>
     </image-manager>
 {% endblock %}
