@@ -17,6 +17,7 @@ class ImageManager extends HTMLElement {
 
       this.querySelector('button#remove').addEventListener('click', () => {
         this.changeValue('');
+        this.changePreview(null);
         if (this.altInput) {
           this.altInput.value = '';
         }
