@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="en">
-  <file id="messages.en">
-    <unit id="9att2Nh" name="Open image manager">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr">
+  <file id="messages.fr">
+    <unit id="NuW.FxN" name="Open image manager">
       <segment>
         <source>Open image manager</source>
         <target>Ouvrir le gestionnaire d'image</target>
       </segment>
     </unit>
-    <unit id="DaXtp6U" name="Remove">
+    <unit id="w4EvxKy" name="Remove">
       <segment>
         <source>Remove</source>
-        <target>Supprimer</target>
+        <target>Retirer</target>
       </segment>
     </unit>
   </file>
