@@ -1,5 +1,5 @@
 import {FileManager} from "filemanager-element";
-import "filemanager-element/FileManager.css";
+import './imagemanager.scss';
 
 class ImageManager extends HTMLElement {
   connectedCallback() {

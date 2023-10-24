@@ -7,6 +7,7 @@
     "build": "vite build"
   },
   "devDependencies": {
+    "sass": "^1.69.4",
     "vite": "^4.4.5"
   },
   "dependencies": {

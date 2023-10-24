@@ -1,0 +1,9 @@
+@import "filemanager-element/FileManager.css";
+
+image-manager {
+    file-manager {
+        .fm-overlay {
+            z-index: 1;
+        }
+    }
+}
